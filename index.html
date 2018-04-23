@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="wrapper flex-column">
+            <section class="row1 flex-row">
+                <section class="col flex-column">
+                    <p class="info">SESSION LENGTH</p>
+                    <div class="flex-row">
+                        <button>-</button>
+                        <p>25</p>
+                        <button>+</button>        
+                    </div>
+                </section>
+                <section class="col flex-column">
+                    <P class="info">BREAK LENGTH</P>
+                    <div class="flex-row">
+                        <button>-</button>
+                        <p>5</p>
+                        <button>+</button>                          
+                    </div>
+                </section>
+            </section>
+            <div class="row2 flex-row">
+                <h3 id='session'>Session</h3>
+                <button>START</button>
+                <p id='timer'>00:00:00</p>
+            </div>
+            <div class="row3 flex-row">
+                <button id='pause'>Pause</button>
+                <button id='stop'>Stop</button>
+            </div>
+        </div>
+    </body>
+</html>
