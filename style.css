@@ -39,16 +39,16 @@ button:focus{
     flex-direction:row;
 }
 
-/* FIRST ROW */
-
 .wrapper{
-    height:400px;
-    max-height:100vh;
-    width:320px;
-    max-width:100vw;
+    max-height:400px;
+    height:90%;
+    max-width:320px;
+    width:100%;
     align-items:center;
     justify-content:space-between;
 }
+
+/* FIRST ROW */
 
 .row1{
     width:100%;
@@ -80,8 +80,8 @@ button:focus{
 .row2 h3{
     color:#666;
     font-size:80%;
-    position:absolute;
-    top:40%;
+    /* position:absolute;
+    top:37%; */
     display:none;
 }
 
@@ -124,4 +124,14 @@ button:focus{
 
 .row3 button:hover{
     background-color:#333;
+}
+
+.trivia{
+    font-size:40%;
+    font-family: 'Cormorant Garamond', serif;
+    color: #999;
+    max-width:320px;
+    width:90%;
+    margin-top:5%;
+    text-align:center;
 }

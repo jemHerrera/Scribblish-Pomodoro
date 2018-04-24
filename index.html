@@ -2,19 +2,19 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400|Cormorant+Garamond:300i" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="script.js"></script>
     </head>
-    <body>
+    <body class='flex-column'>
         <div class="wrapper flex-column">
             <section class="row1 flex-row">
                 <section class="col flex-column">
                     <p class="info">SESSION LENGTH</p>
                     <div class="flex-row">
                         <button>-</button>
-                        <p>25</p>
+                        <p id='sLength'>25</p>
                         <button>+</button>
                     </div>
                 </section>
@@ -22,24 +22,26 @@
                     <P class="info">BREAK LENGTH</P>
                     <div class="flex-row">
                         <button>-</button>
-                        <p>5</p>
+                        <p id='bLength'>5</p>
                         <button>+</button>
                     </div>
                 </section>
             </section>
-            <div class="row2 flex-row">
+            <div class="row2 flex-column">
                 <h3 id='session'>Session</h3>
                 <button id='start'>START</button>
                 <p id='timer'>
-                    <span id='hours'>1</span>:
-                    <span id='minutes'>01</span>:
-                    <span id='seconds'>11</span>
+                    <span id='hours'></span>:
+                    <span id='minutes'></span>:
+                    <span id='seconds'></span>
                 </p>
             </div>
             <div class="row3 flex-row">
+                <button id='resume'>Resume</button>
                 <button id='pause'>Pause</button>
-                <button id='stop'>Stop</button>
+                <button id='stop1'>Stop</button>
             </div>
         </div>
+        <p class='trivia'>A pomodoro clock is a timer used to break down work into intervals, traditionally 25 minutes in length, separated by short breaks.</p>
     </body>
 </html>
