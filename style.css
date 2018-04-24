@@ -75,6 +75,7 @@ button:focus{
 }
 .row2 h3{
     color:#666;
+    font-size:80%;
     position:absolute;
     top:40%;
     display:none;
@@ -92,7 +93,7 @@ button:focus{
 }
 .row2 button:hover{
     background-color:#333;
-    
+
 }
 .row2 p{
     font-size:150%;

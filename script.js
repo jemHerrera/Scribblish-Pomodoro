@@ -6,10 +6,15 @@ document.addEventListener('DOMContentLoaded', function(){
             else if (button.textContent == '-') button.nextElementSibling.textContent--;
             else if (button.textContent == 'START'){
                 button.style.display = 'none';
-                document.querySelector('#pause').style.display='block';
-                document.querySelector('#stop').style.display='block';
-                document.querySelector('#session').style.display='block';
-                document.querySelector('#timer').style.display='block';
+                ['#pause', '#stop', '#session', '#timer'].forEach(function(element){
+                    document.querySelector(element).style.display = 'block';
+                });
+            }
+            else if (button.textContent == 'Stop'){
+                document.querySelector('#start').style.display = 'block';
+                ['#pause', '#stop', '#session', '#timer'].forEach(function(element){
+                    document.querySelector(element).style.display = 'none';
+                });
             }
         });
     });
