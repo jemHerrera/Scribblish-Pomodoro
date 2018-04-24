@@ -54,6 +54,10 @@ button:focus{
     width:100%;
     justify-content:space-around;
 }
+.col div p{
+    width:60px;
+    text-align: center;
+}
 .col{align-items:center;}
 
 .info{font-size:35%;}
