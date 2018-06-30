@@ -9,7 +9,7 @@ body{
     font-size:36px;
     font-weight:300;
     color:#eee;
-    background-color:#222;
+    background-color: #0e1218;
     position:relative;
     height:100vh;
     display:flex;
@@ -127,7 +127,7 @@ button:focus{
 }
 
 .trivia{
-    font-size:40%;
+    font-size:55%;
     font-family: 'Cormorant Garamond', serif;
     color: #999;
     max-width:320px;
